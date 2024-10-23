@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --font-size-title:2.25rem;
+    --font-size-small-title:1.5rem;
+    --font-size-body-text:1rem;
+
+    --black-color: #030616;
+    --bg-header-white-color: #F8FAFC;
+    --white-color: #FFFFFF;
+    --grey-color: #D2D5DA;
+    --light-grey-color: #D9D9D9;
+    --link-color: #4E80EE;
+
+    --font-weight-bold: bold;
+    --font-weight-semi-bold: 600;
+    --font-weight-regular: 400;
+}
+*{
+    font-family: "Inter", sans-serif;
+}
+a, a:hover, a:after{
+    color: var(--link-color);
+    text-decoration: inherit;
+    cursor: pointer;
+}
+body{
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+.containerHeader{
+    margin-bottom: 60px;
+}
+.contentTitle {
+    text-align: center;
+}
+.title {
+    font-size: var(--font-size-title);
+    margin-bottom: 0;
+}
+.contentSubtitle {
+    text-align: center;
+}
+.containerFAQ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 0 20px;
+    background-color: var(--bg-header-white-color);
+}
+.contentFAQ {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.faq_question {
+    font-size: var(--font-size-small-title);
+    font-weight: var(--font-weight-semi-bold);
+}
+ol{
+    padding-inline-start: 30px;
+}
+li {
+    margin: 10px 0;
+}
+hr{
+    background-color: var(--grey-color);
+    width: 75%;
+}
+.FAQ{
+    padding: 40px 0 0 0;
+    width: 75%;
+}
+.content_faqReponse p {
+    margin: 30px 0;
+}
+.bold{
+    font-weight: var(--font-weight-bold);
+}
+@media (min-width: 768px){
+
+}
+</style>
+<body>
+    <div class="containerPage">
+        <div class="contentPage">
+            <div class="containerHeader">
+                <div class="containerTitle">
+                    <div class="contentTitle">
+                        <h1 class="title">Frequently Asked Questions</h1>
+                    </div>
+                </div>
+                <div class="containerSubtitle">
+                    <div class="contentSubtitle">
+                        <p class="subtitle">
+                            Browse through the most frequently asked questions
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="containerFAQ">
+                <div class="contentFAQ">
+                    <div class="FAQ">
+                        <div class="container_faqQuestion">
+                            <div class="faq_question">
+                                How can I track my order?
+                            </div>
+                        </div>
+                        <div class="container_faqReponse">
+                            <div class="content_faqReponse">
+                                <p>You can track your order using the following steps:</p>
+                                <ol>
+                                    <li>Go to the Order <a class="link"  href="https://snapcode.jeremiecode.fr/public/" target="_blank">Tracking page</a>.</li>
+                                    <li>Enter your order number and email address.</li>
+                                    <li>Click on the Track Order button to view the current status of your shipment.</li>
+                                </ol>
+                                <p>If you encounter any issues, please visit our <a class="link" href="https://jeremiecode.fr/about-me/" target="_blank">Help Center</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="FAQ">
+                        <div class="container_faqQuestion">
+                            <div class="faq_question">
+                                What is your return policy?
+                            </div>
+                        </div>
+                        <div class="container_faqReponse">
+                            <div class="content_faqReponse">
+                                <p>We offer a 30-day return policy on most items. Here are some key points:</p>
+                                <ul>
+                                    <li><span class="bold">Items must be in original condition:</span> Unworn, unused, and unwashed.</li>
+                                    <li><span class="bold">Include original packaging and tags:</span> All items should be returned with their original packaging and tags.</li>
+                                    <li><span class="bold">Proof of purchase:</span> A receipt or proof of purchase is required.</li>
+                                </ul>
+                                <p>For more detailed information, read our full <span class="link">Return Policy</span>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
